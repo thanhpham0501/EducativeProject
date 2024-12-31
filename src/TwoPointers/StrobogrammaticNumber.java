@@ -13,6 +13,12 @@ import java.util.Map;
  * Constraints: 1 <= num.length <= 50
  *              num contains only digits
  *              num has no leading zeros except when the number itself is zero
+ *
+ * Time Complexity : O(n) where n is the length of the input string num. This is because we iterate through the string
+ *                   once, comparing each digit pair from both ends toward the center
+ *
+ * Space Complexity: O(1) because the solution uses a fixed-size map to store the strobogramma digit mappings, regardless
+ *                   of the input size.
  */
 public class StrobogrammaticNumber {
 
