@@ -35,6 +35,8 @@ public class MinMoveToMakePalindrome {
         // Two-pointers approach: i starts from beginning and j starts from the end
         // Loop to find a character from the right (s[j]) that
         // matches with a character from the left (s[i])
+        // ++i : use when need the incremented value immediately
+        // i++ : use when the current value is needed first, and the increment happens later.
         for (int i = 0, j = chars.length - 1; i < j; ++i) {
             int k = j;
 
