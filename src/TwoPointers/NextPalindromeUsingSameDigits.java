@@ -50,6 +50,15 @@ public class NextPalindromeUsingSameDigits {
             return "";
         }
 
+        /**
+         *  - in Java, StringBuilder is a mutable class used to create and manipulate sequence of characters efficiently.
+         *  Unlike, String, StringBuilder object can be modified without creating a new object--> used in situation where
+         *  frequent modifications are needed.
+         *
+         *  - provide methods: append(), insert(), replace(), delete(), reverse()
+         *
+         *  - can be converted to a String using toString() method
+         */
         // Step 2: Form the next palindrome by mirroring the left half
         StringBuilder nextPalindrome = new StringBuilder();
         for (char c : leftHalf) {
