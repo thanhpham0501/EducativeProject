@@ -11,10 +11,13 @@ package FastSlowPointers;
  *
  *  Constraints: 1 <= n <= 2^31 -1
  *
- *  Time Complexity:
+ *  Time Complexity: Consider two cases:
+ *                  1. number with 3 digits:  O(n)
+ *                  2. Number more than 3 digits: O(nlog(n))
+ *               --> O(1 + log n) ~ O(log n)
  *
  *
- *  Space Complexity:
+ *  Space Complexity: O(1)
  *
  *
  */
